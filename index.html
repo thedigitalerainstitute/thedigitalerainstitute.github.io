@@ -26,23 +26,128 @@
         </ul>
     </nav>
     <section class="hero-section">
+        <video autoplay muted loop class="background-video">
+            <source src="images/rocketship-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
         <h1>Evolving Human Culture.</h1>
+    </section>
+    <section class="welcome-section">
+        <h2>Welcome To The Digital Era.</h2>
+        <p>Just like the agricultural and industrial eras before, the digital era comes with great power but great consequences. 
+            There is too much unnecessary suffering because we don't know how to adjust our culture. The Digital Era Institute's mission is
+            to understand the new world we live in, predict future changes, and learn how to adjust our
+            culture to the new age.
+        </p>
+        <div class="construction-notice">
+            <h3>thedigitalera is Still Under Development!</h3>
+            <p>Please check back when we have more content. Join our mailing list to stay updated!</p>
+            <form class="mailing-list-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+            </form>
+        </div>
+
+        <style>
+            .construction-notice {
+            margin-top: 30px;
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            text-align: center;
+            }
+            .construction-notice h3 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            }
+            .construction-notice p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            }
+            .mailing-list-form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            }
+            .mailing-list-form input[type="email"] {
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 250px;
+            }
+            .mailing-list-form button {
+            padding: 10px 20px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            }
+            .mailing-list-form button:hover {
+            background-color: #45a049;
+            }
+            @media (max-width: 600px) {
+                .mailing-list-form {
+                    flex-direction: column;
+                }
+                .mailing-list-form input[type="email"],
+                .mailing-list-form button {
+                    width: 100%;
+                }
+            }
+        
+        </style>
     </section>
 
     <style>
+        .welcome-section {
+            padding: 50px;
+            background-color: white;
+            color: black;
+            text-align: left;
+        }
+        .welcome-section h2 {
+            font-size: 2.5em;
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+        }
+        .welcome-section p {
+            font-size: 1.2em;
+            font-family: Inter, sans-serif;
+            line-height: 1.6;
+        }
+    </style>
+    <style>
         .hero-section {
+            position: relative;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #0e0e0f;
             color: white;
             text-align: center;
+            overflow: hidden;
+        }
+        .background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            filter: grayscale(90%);
         }
         .hero-section h1 {
             font-size: 5em;
             font-family: 'Inter-Italic', sans-serif;
             font-weight: 300;
+            z-index: 1;
+            text-shadow: 0 0 12px rgba(0, 0, 0, 1);
         }
     </style>
     <style>
