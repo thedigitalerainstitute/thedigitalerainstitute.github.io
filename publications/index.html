@@ -1,1 +1,171 @@
-gone fishing!
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Publications - The Digital Era Institute</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <style>
+        /* Include the same styles from the provided file */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #444;
+            background: #2b2b2d;
+            padding: 5px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar-brand {
+            font-family: 'Teko', sans-serif;
+            font-size: 24px;
+            color: white;
+            cursor: pointer;
+        }
+        .navbar-brand .dot {
+            color: orange;
+        }
+        .navbar-toggle {
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+            margin-right: 30px;
+        }
+        .navbar-toggle .bar {
+            height: 3px;
+            width: 25px;
+            background-color: white;
+            margin: 4px 0;
+        }
+        .navbar-menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: none;
+            position: absolute;
+            top: 40px; 
+            right: 40px; 
+            background-color: #2b2b2d;
+            flex-direction: column;
+        }
+        .navbar-menu.active {
+            display: block;
+        }
+        .navbar-item {
+            margin: 10px 20px;
+            font-family: Teko, sans-serif;
+            font-size: x-large;
+            text-align: center;
+        }
+        .navbar-item:hover {
+            background-color: rgb(15, 15, 16);
+        }
+        .navbar-item a {
+            color: white;
+            text-decoration: none;
+        }
+        @media (min-width: 769px) {
+            .navbar-menu {
+                flex-direction: row;
+            }
+        }
+        .hero-section {
+            padding-top: 60px;
+        }
+        body {
+            background: #2b2b2d;
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        h1, h3, h4, p {
+            text-align: center;
+            font-family: 'Inter', sans-serif;
+            color: #fff;
+        }
+        ul, li {
+            text-shadow: 0px 3px 6px rgb(0, 0, 0);
+        }
+        .title {
+            font-size: 5em;
+            margin-bottom: 20px;
+        }
+        .map {
+            width: 50%;
+            margin: 0 auto;
+            border: 2px solid #444;
+            padding: 1rem;
+            background-color: #333;
+            color: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+            border-radius: 1rem;
+        }
+        .map li {
+            list-style: none;
+            margin: 1rem 2rem;
+
+            justify-content: space-between;
+            align-items: center;
+        }
+        .paper-button {
+            background-color: #444;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 0.5rem;
+            margin-left: 1rem;
+            cursor: pointer;
+            font-family: Inter, sans-serif;
+        }
+        .paper-button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand" onclick="window.location.href='/';">
+            thedigitalera<span class="dot">.</span>org
+        </div>
+        <div class="navbar-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="navbar-menu">
+            <li class="navbar-item"><a href="/">Home</a></li>
+            <li class="navbar-item"><a href="#">About</a></li>
+            <li class="navbar-item"><a href="#">Videos</a></li>
+            <li class="navbar-item"><a href="#">Publications</a></li>
+        </ul>
+    </nav>
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navbarMenu = document.querySelector('.navbar-menu');
+
+        mobileMenu.addEventListener('click', () => {
+            navbarMenu.classList.toggle('active');
+        });
+    </script>
+    <div class="hero-section">
+        <h1 class="title">Publications</h1>
+        <div class="publication-list">
+            <div class="publication-section">
+                <h1>Miscellaneous/Unrelated</h1>
+                <ul class="map">
+                    <li>Economic Efficacy - The Best US State Economies of 2024 <button class="paper-button" onclick="window.location.href='economic-efficacy/'">Read</button></li>
+                </ul>
+            </div>
+            <!-- Add more publications as needed -->
+        </div>
+    </div>
+</body>
+</html>
