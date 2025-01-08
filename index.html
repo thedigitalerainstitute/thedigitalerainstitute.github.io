@@ -36,11 +36,11 @@
         <h2>Welcome To The Digital Era.</h2>
         <p>Just like the agricultural and industrial eras before, the digital era comes with great power but great consequences. 
             There is too much unnecessary suffering because we don't know how to adjust our culture. The Digital Era Institute's mission is
-            to understand the new world we live in, predict future changes, and learn how to adjust our
+            to understand the new world we live in, predict future changes, and learn we can adjust our
             culture to the new age.
         </p>
         <div class="construction-notice">
-            <h3>thedigitalera is Still Under Development!</h3>
+            <h3>thedigitalera.org is Still Under Development!</h3>
             <p>Please check back when we have more content. Join our mailing list to stay updated!</p>
             <form class="mailing-list-form">
             <input type="email" placeholder="Enter your email" required>
@@ -148,6 +148,7 @@
             font-weight: 300;
             z-index: 1;
             text-shadow: 0 0 12px rgba(0, 0, 0, 1);
+            user-select: none;
         }
     </style>
     <style>
@@ -161,7 +162,10 @@
             align-items: center;
             background: linear-gradient(to right, rgb(36, 36, 39), rgb(46, 46, 69));
             padding: 5px 20px;
-            position: relative;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
         }
         .navbar-brand {
             font-family: 'Teko', sans-serif;
@@ -176,6 +180,7 @@
             display: flex;
             flex-direction: column;
             cursor: pointer;
+            margin-right: 30px;
         }
         .navbar-toggle .bar {
             height: 3px;
@@ -191,7 +196,7 @@
             display: none;
             position: absolute;
             top: 40px; 
-            right: 0px; 
+            right: 40px; 
             background-color: rgb(46, 46, 69);
             flex-direction: column;
         }
@@ -214,8 +219,11 @@
         /* Optional: adjust for larger screens if desired */
         @media (min-width: 769px) {
             .navbar-menu {
-                flex-direction: row;
+            flex-direction: row;
             }
+        }
+        .hero-section {
+            padding-top: 60px; /* Adjust padding to avoid overlap with fixed navbar */
         }
     </style>
 
