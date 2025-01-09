@@ -16,6 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/fonts.css">
     <link rel="stylesheet" href="/css/index.css">
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
     <style>
         .map {
             width: 50%;
@@ -238,6 +239,9 @@
             color: white;
             text-decoration: none;
         }
+        ol li {
+            margin: 1em 0;
+        }
         /* Optional: adjust for larger screens if desired */
         @media (min-width: 769px) {
             .navbar-menu {
@@ -294,6 +298,58 @@
             </li>
         </ul>
     </div>
+    <h1>Top 10 Best State Economies By Income Left Over</h1>
+    <div class="map" id="income-leftover">
+        <ol>
+            <li>New Hampshire: $56,322.28</li>
+            <!---<p>New Hampshire sports the #1 title. Due to its proximity to Boston, 
+                and legislation allowing Granite Staters to maintain jobs in 
+                Massachusetts, New Hampshire can maintain a low cost of living while
+                also having the highest median income!  </p>--->
+            <li>Maryland: $53,294.03</li>
+            <!---<p>As part of the DC-Maryland-Virginia area, and being home to 
+                the great city of Baltimore, 
+                Maryland has a lot of economic opportunity and a moderate cost of living,
+                earning it the second spot on this list.
+            </p>--->
+            <li>North Dakota: $50,837.04</li>
+            <li>Virginia: $50,437.94</li>
+            <li>Washington: $50,353.52</li>
+            <li>Alaska: $50,171.06</li>
+            <li>New Jersey: $50,000.38</li>
+            <li>South Dakota: $49,259.62</li>
+            <li>Utah: $47,511.62</li>
+            <li>Minnesota: $47,367.16</li>
+        </ol>
+
+    </div>
+    <h1>Best State Economy By Percent Income Used On Essentials</h1>
+    <div class="map" id="percent-essentials">
+        <ol>
+            <li>South Dakota: 28.10%</li>
+            <li>North Dakota: 28.50%</li>
+            <li>Ohio: 29.30%</li>
+            <li>Missouri: 29.30%</li>
+            <li>Iowa: 30.70%</li>
+            <li>Kansas: 31.40%</li>
+            <li>Wyoming: 32.60%</li>
+            <li>Nebraska: 32.70%</li>
+            <li>Utah: 32.80%</li>
+            <li>Arkansas: 33.00%</li>
+        </ol>
+    </div>
+    <h1>Drawbacks/Limitations</h1>
+    <div class="map">
+        <ul>
+            <li>Doesn't account for one off necessary purchases, such as a new phone, clothes, etc.</li>
+            <li>Or other expenditures that aren't necessary but are important such as investment/savings, extra education, extracurriculars</li>
+            <li>People who are parents make more, which could happen because people who are financially well off are more likely to start a family</li>
+            <li>Doesn't factor owning a home, since it's harder to calculate a monthly cost for it given variables like downpayment</li>
+            <li>Does not include child tax credits per state, that would be its own project</li>
+            <li>Some data was very hard to find, so for some data we had to rely on news articles that didn't cite sources for its data.</li>
+        </ul>
+    </div>
+
     <h1>Total Cost for Family of Four</h1>
     <h3>Only for essentials, excludes discretionary spending or one off necessary spending like clothes. For closer to true cost, add 20-30%</h3>
     <div class="map" id="familyoffour"></div>
@@ -361,16 +417,7 @@
             <li>Average Income Leftover = (Leftover Income for Family of Four + Leftover Income for Single Person) / 2</li>
         </ul>
     </div>
-    <h1>Drawbacks/Limitations</h1>
-    <div class="map">
-        <ul>
-            <li>Doesn't account for one off necessary purchases, such as a new phone, clothes, etc.</li>
-            <li>Or other expenditures that aren't necessary but are important such as investment/savings, extra education, extracurriculars</li>
-            <li>People who are parents make more, which could happen because people who are financially well off are more likely to start a family</li>
-            <li>Doesn't factor owning a home, since it's harder to calculate a monthly cost for it given variables like downpayment</li>
-            <li>Does not include child tax credits per state, that would be its own project</li>
-        </ul>
-    </div>
+
 
     <h1 class="title">Supporting data</h1>
     <h1>Median Income after Tax for Family of Four</h1>
